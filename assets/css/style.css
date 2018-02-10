@@ -1,0 +1,17 @@
+body {
+	background-image: url("../images/abstract.jpg");
+	opacity: 0.9;
+}
+
+/*Navigation*/
+
+.wrapper {
+	position:relative;
+}
+
+.fixed-action-btn {
+	position: relative;
+	bottom: 20%;
+	left: 90%;
+	z-index: 10;
+}
