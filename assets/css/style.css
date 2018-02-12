@@ -7,11 +7,20 @@ body {
 
 .wrapper {
 	position:relative;
+	margin-bottom: 5%;
 }
 
 .fixed-action-btn {
 	position: relative;
 	bottom: 20%;
-	left: 90%;
+	right: 0;
 	z-index: 10;
+}
+
+.brand-logo {
+	margin-left: 2%;
+}
+
+.activator {
+	border-radius: 10px;
 }
