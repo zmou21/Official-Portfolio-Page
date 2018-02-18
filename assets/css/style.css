@@ -1,26 +1,54 @@
-body {
-	background-image: url("../images/abstract.jpg");
-	opacity: 0.9;
+	body {
+		/* background-image: url("../images/background.png"); */
+		/* opacity: 0.9; */
+		/* background: linear-gradient(lightgrey, #127d65, lightblue); */
+	}
+
+	h1 {
+		margin: 2%;
+
+	}
+
+	/*Navigation*/
+
+	.wrapper {
+		position:relative;
+		margin-bottom: 5%;
+	}
+
+	.fixed-action-btn {
+		position: relative;
+		bottom: 20%;
+		right: 0;
+		z-index: 10;
+	}
+
+	.brand-logo {
+		margin-left: 2%;
+	}
+
+	.activator {
+		border-radius: 10px;
+	}
+
+	/* All pages */
+
+	.smooth {
+		margin: 0;
+	}
+
+/* Right side of page */
+
+#left {
+	width: 20%;
+	height: 100%;
+	background: lightblue;
+	float: left;
 }
 
-/*Navigation*/
-
-.wrapper {
-	position:relative;
-	margin-bottom: 5%;
-}
-
-.fixed-action-btn {
-	position: relative;
-	bottom: 20%;
-	right: 0;
-	z-index: 10;
-}
-
-.brand-logo {
-	margin-left: 2%;
-}
-
-.activator {
-	border-radius: 10px;
+#right {
+	width: 80%;
+	height: 100%;
+	background: lightgrey;
+	float: right;
 }
