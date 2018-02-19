@@ -37,18 +37,186 @@
 		margin: 0;
 	}
 
-/* Right side of page */
+/* Left side of page */
 
 #left {
 	width: 20%;
 	height: 100%;
-	background: lightblue;
+	color: #0D0D23;
+	border: 1px solid #F0F0F0;
+	background: #F0F0F0;
 	float: left;
+	position: relative;
 }
+
+#logo {
+	width: 50%;
+	margin: 3% 1% 1% 1%;
+	position: relative;
+	left: 22%;
+}
+
+#links {
+	position: relative;
+	top: 8%;
+}
+
+.side-bar {
+	font-size: 1.25em;
+	text-align: right;
+	padding: 2% 3%;
+}
+
+.side-bar a {
+	color:#4A4A5D;
+}
+
+#social {
+	position: absolute;
+	width: 75%;
+	left: 13%;
+	bottom: 10%;
+}
+
+i {
+	/* border: 1px solid #4A4A5D; */
+	padding: 2% 4%;
+	margin: 1%;
+	font-size: 2.25em;
+	color: #4A4A5D;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 24%;
+	color: #0D0D23;
+}
+
+
+/* Right side of page */
 
 #right {
 	width: 80%;
 	height: 100%;
-	background: lightgrey;
+	background: #4A4A5D;
 	float: right;
+}
+
+
+
+/* Media Quiery @1200 for laptops */
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+		/* Left side of page */
+
+		#left {
+			width: 20%;
+			height: 735px;
+			color: #0D0D23;
+			border: 1px solid #F0F0F0;
+			background: #F0F0F0;
+			float: left;
+			position: relative;
+		}
+
+		#logo {
+			width: 50%;
+			margin: 3% 1% 1% 1%;
+			position: relative;
+			left: 22%;
+		}
+
+
+
+
+		/* Right side of page */
+
+		#right {
+			width: 80%;
+			height: 735px;
+			background: #4A4A5D;
+			float: right;
+		}
+
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+		/* Left side of page */
+
+		#left {
+			width: 20%;
+			height: 100%;
+			color: #0D0D23;
+			border: 1px solid #F0F0F0;
+			background: #F0F0F0;
+			float: left;
+			position: relative;
+		}
+
+		#logo {
+			width: 50%;
+			margin: 3% 1% 1% 1%;
+			position: relative;
+			left: 22%;
+		}
+
+		/* Right side of page */
+
+		#right {
+			width: 80%;
+			height: 100%;
+			background: #4A4A5D;
+			float: right;
+		}
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ and mobile phones with screen less than
+ 768px ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+		/* Left side of page */
+
+		#left {
+			width: 20%;
+			height: 100%;
+			color: #0D0D23;
+			border: 1px solid #F0F0F0;
+			background: #F0F0F0;
+			float: left;
+			position: relative;
+		}
+
+		#logo {
+			width: 50%;
+			margin: 3% 1% 1% 1%;
+			position: relative;
+			left: 22%;
+		}
+
+		/* Right side of page */
+
+		#right {
+			width: 80%;
+			height: 100%;
+			background: #4A4A5D;
+			float: right;
+		}
+
 }
