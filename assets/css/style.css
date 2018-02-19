@@ -46,7 +46,9 @@
 	border: 1px solid #F0F0F0;
 	background: #F0F0F0;
 	float: left;
-	position: relative;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 
 #logo {
@@ -69,6 +71,7 @@
 
 .side-bar a {
 	color:#4A4A5D;
+	font-family: 'Sarala', sans-serif;
 }
 
 #social {
@@ -91,6 +94,7 @@ footer {
 	bottom: 0;
 	left: 24%;
 	color: #0D0D23;
+	font-family: 'Sarala', sans-serif;
 }
 
 
@@ -99,7 +103,7 @@ footer {
 #right {
 	width: 80%;
 	height: 100%;
-	background: #4A4A5D;
+	/* background: #4A4A5D; */
 	float: right;
 }
 
@@ -139,7 +143,8 @@ footer {
 		#right {
 			width: 80%;
 			height: 735px;
-			background: #4A4A5D;
+			/* background: #4A4A5D; */
+			background-image: url("../images/home_background.png");
 			float: right;
 		}
 
@@ -178,6 +183,7 @@ footer {
 			width: 80%;
 			height: 100%;
 			background: #4A4A5D;
+
 			float: right;
 		}
 }
