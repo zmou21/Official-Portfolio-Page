@@ -1,4 +1,4 @@
-	@import url('https://fonts.googleapis.com/css?family=Barlow');
+	@import url('https://fonts.googleapis.com/css?family=Sarala');
 
 	body {
 		background: #F0F0F0 url('../images/main_background.png') no-repeat center center fixed;
@@ -6,7 +6,7 @@
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-		font-family: 'Barlow', sans-serif;
+		font-family: 'Sarala', sans-serif;
 	}
 	.container {
 		width: 100%;
@@ -63,11 +63,11 @@
 		-ms-animation-delay: 0s;
 		animation-delay: 0s;
 	}
-	.sp-container h2.frame-2 {
-		-webkit-animation-delay: 3s;
-		-moz-animation-delay: 3s;
-		-ms-animation-delay: 3s;
-		animation-delay: 3s;
+	/* .sp-container h2.frame-2 {
+		-webkit-animation-delay: 4s;
+		-moz-animation-delay: 4s;
+		-ms-animation-delay: 4s;
+		animation-delay: 4s;
 	}
 	.sp-container h2.frame-3 {
 		-webkit-animation-delay: 6s;
@@ -81,7 +81,7 @@
 		-moz-animation-delay: 9s;
 		-ms-animation-delay: 9s;
 		animation-delay: 9s;
-	}
+	} */
 	.sp-container h2.frame-5 {
 		-webkit-animation: none;
 		-moz-animation: none;
@@ -91,24 +91,30 @@
 		text-shadow: 0px 0px 1px #fff;
 	}
 	.sp-container h2.frame-5 span {
-		-webkit-animation: blurFadeIn 3s ease-in 12s backwards;
-		-moz-animation: blurFadeIn 1s ease-in 12s backwards;
-		-ms-animation: blurFadeIn 3s ease-in 12s backwards;
-		animation: blurFadeIn 3s ease-in 12s backwards;
+		-webkit-animation: blurFadeIn 3s ease-in 4s backwards;
+		-moz-animation: blurFadeIn 1s ease-in 4s backwards;
+		-ms-animation: blurFadeIn 3s ease-in 4s backwards;
+		animation: blurFadeIn 3s ease-in 4s backwards;
 		color: transparent;
 		text-shadow: 0px 0px 1px #fff;
 	}
 	.sp-container h2.frame-5 span:nth-child(2) {
-		-webkit-animation-delay: 13s;
-		-moz-animation-delay: 13s;
-		-ms-animation-delay: 13s;
-		animation-delay: 13s;
+		-webkit-animation-delay: 4s;
+		-moz-animation-delay: 4s;
+		-ms-animation-delay: 4s;
+		animation-delay: 4s;
 	}
 	.sp-container h2.frame-5 span:nth-child(3) {
-		-webkit-animation-delay: 14s;
-		-moz-animation-delay: 14s;
-		-ms-animation-delay: 14s;
-		animation-delay: 14s;
+		-webkit-animation-delay: 7s;
+		-moz-animation-delay: 7s;
+		-ms-animation-delay: 7s;
+		animation-delay: 7s;
+	}
+	.sp-container h2.frame-5 span:nth-child(4) {
+		-webkit-animation-delay: 7s;
+		-moz-animation-delay: 7s;
+		-ms-animation-delay: 7s;
+		animation-delay: 7s;
 	}
 	.sp-globe {
 		position: absolute;
@@ -118,10 +124,10 @@
 		top: 50%;
 		margin: -137px 0 0 -141px;
 		background: transparent url(http://web-sonick.zz.mu/images/sl/globe.png) no-repeat top left;
-		-webkit-animation: fadeInBack 3.6s linear 14s backwards;
-		-moz-animation: fadeInBack 3.6s linear 14s backwards;
-		-ms-animation: fadeInBack 3.6s linear 14s backwards;
-		animation: fadeInBack 3.6s linear 14s backwards;
+		-webkit-animation: fadeInBack 3.6s linear 8s backwards;
+		-moz-animation: fadeInBack 3.6s linear 8s backwards;
+		-ms-animation: fadeInBack 3.6s linear 8s backwards;
+		animation: fadeInBack 3.6s linear 8s backwards;
 		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
 		filter: alpha(opacity=30);
 		opacity: 0.3;
@@ -141,15 +147,15 @@
 		width: 100px;
 		height: 100px;
 		background: #fff;
-		color: #3f1616;
+		color: #4A4A5D;
 		font-size: 25px;
 		-webkit-border-radius: 50%;
 		-moz-border-radius: 50%;
 		border-radius: 50%;
-		-webkit-animation: fadeInRotate 1s linear 16s backwards;
-		-moz-animation: fadeInRotate 1s linear 16s backwards;
-		-ms-animation: fadeInRotate 1s linear 16s backwards;
-		animation: fadeInRotate 1s linear 16s backwards;
+		-webkit-animation: fadeInRotate 1s linear 8s backwards;
+		-moz-animation: fadeInRotate 1s linear 8s backwards;
+		-ms-animation: fadeInRotate 1s linear 8s backwards;
+		animation: fadeInRotate 1s linear 8s backwards;
 		-webkit-transform: scale(1) rotate(0deg);
 		-moz-transform: scale(1) rotate(0deg);
 		-o-transform: scale(1) rotate(0deg);
@@ -157,8 +163,8 @@
 		transform: scale(1) rotate(0deg);
 	}
 	.sp-circle-link:hover {
-		background: #85373b;
-		color: #fff;
+		background: #4A4A5D;
+		color: #f0f0f0;
 	}
 	/**/
 
