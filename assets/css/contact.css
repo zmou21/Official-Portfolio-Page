@@ -1,0 +1,63 @@
+/* specific stylesheet for contact page */
+
+#right-contact {
+  width: 80%;
+  height: 735px;
+  background-image: url("../images/contact.png");
+  position: relative;
+  float: right;
+}
+
+.contact {
+  width: 65%;
+  position: relative;
+  left: 12%;
+  top: 18%;
+}
+
+#phone {
+  width: 225px;
+  height: 450px;
+  position: absolute;
+  top: 23%;
+  left: 100.3%;
+  /* background-image: url("../images/phone.png");  */
+  z-index: 10;
+  display: inline;
+  /* border-radius: 2px; */
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  padding-top: 1%;
+}
+
+label {
+  color: #F0F0F0;
+  font-size: 1em;
+  font-family: 'Sarala', sans-serif;
+
+}
+input {
+  color: #F0F0F0;
+  padding: 10% 0;
+}
+textarea {
+  color: #F0F0F0;
+  height: 130px;
+}
+
+
+
+/* Media Quiery @1200 for laptops */
+/* ----------- Non-Retina Screens ----------- */
+
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
+}
