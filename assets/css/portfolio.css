@@ -1,0 +1,105 @@
+/* specific stylesheet for portfolio page */
+
+body {
+  background-image: url("../images/home_background.png");
+}
+
+/* #right-portfolio {
+  width: 80%;
+  height: 735px;
+  float: right;
+  overflow:auto;
+} */
+
+.demo-1 .main-title {
+  text-transform: uppercase;
+  font-size: 4.2em;
+  letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+  font-weight: 200;
+}
+
+.container {
+  width: 70%;
+  height: 735px;
+  position: relative;
+  left: -5%;
+}
+
+.activator {
+  border-radius: 10px;
+}
+
+
+
+/* Media Quiery @1200 for laptops */
+/* ----------- Non-Retina Screens ----------- */
+/* @media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) { */
+
+		/* Left side of page */
+
+		/* #left {
+			width: 20%;
+			height: 735px;
+			color: #0D0D23;
+			border: 1px solid #F0F0F0;
+			background: #F0F0F0;
+			float: left;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 0px 10px 10px 0px;
+		}
+
+		#logo {
+			width: 50%;
+			margin: 3% 1% 1% 1%;
+			position: relative;
+			left: 22%;
+		}
+
+    #links {
+      position: relative;
+      top: 8%;
+    }
+
+    .side-bar {
+      font-size: 1.25em;
+      text-align: right;
+      padding: 2% 3%;
+    }
+
+    .side-bar a {
+      color:#4A4A5D;
+      font-family: 'Megrim', cursive;
+    }
+
+    #social {
+      position: absolute;
+      width: 75%;
+      left: 13%;
+      bottom: 10%;
+    } */
+
+		/* Right side of page */
+		/* #right-portfolio {
+			width: 80%;
+			height: 735px;
+			background-image: url("../images/home_background.png");
+			float: right;
+      overflow:auto;
+		} */
+
+		/* .container {
+			width: 70%;
+	    height: 735px;
+	    position: relative;
+	    left: -5%;
+		} */
+
+}
