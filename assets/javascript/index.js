@@ -203,3 +203,41 @@
     }
 
 })();
+
+
+function showHideNav() {
+  var y = document.getElementById("right");
+  var x = document.getElementById("left");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+        y.style.width = "80%";
+        document.getElementById("angle-icon").classList.add('fa-angle-double-left');
+        document.getElementById("angle-icon").classList.remove('fa-angle-double-right');
+        document.getElementById("icon").style.left = "22%";
+    } else {
+        x.style.display = "none";
+        y.style.width = "100%";
+        document.getElementById("angle-icon").classList.remove('fa-angle-double-left');
+        document.getElementById("angle-icon").classList.add('fa-angle-double-right');
+        document.getElementById("icon").style.left = "2%";
+    }
+}
+
+// consolidate with above function
+// function showHideNavOther() {
+//   var y = document.getElementById("right");
+//   var x = document.getElementById("left");
+//     if (x.style.display === "none") {
+//         x.style.display = "block";
+//         y.style.width = "80%";
+//         document.getElementById("angle-icon").classList.add('fa-angle-double-left');
+//         document.getElementById("angle-icon").classList.remove('fa-angle-double-right');
+//         document.getElementById("icon").style.left = "22%";
+//     } else {
+//         x.style.display = "none";
+//         y.style.width = "100%";
+//         document.getElementById("angle-icon").classList.remove('fa-angle-double-left');
+//         document.getElementById("angle-icon").classList.add('fa-angle-double-right');
+//         document.getElementById("icon").style.left = "2%";
+//     }
+// }
