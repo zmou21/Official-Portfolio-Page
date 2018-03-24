@@ -1,19 +1,30 @@
-	body {
-		/* background-image: url("../images/background.png"); */
-		/* opacity: 0.9; */
-		/* background: linear-gradient(lightgrey, #127d65, lightblue); */
-	}
 
-	h1 {
-		margin: 2%;
+												/* Styling for all pages All pages */
+/*******************************************************************************/
 
-	}
+body {
+	background-color: #4A4A5D;
+}
 
-	/*Navigation*/
+h1 {
+	margin: 2%;
+}
 
-	.wrapper {
-		position:relative;
-		margin-bottom: 5%;
+
+												/*Navigation - Left side of page */
+/*******************************************************************************/
+
+	#left {
+		width: 20%;
+		height: 100%;
+		color: #0D0D23;
+		border: 1px solid #F0F0F0;
+		background: #F0F0F0;
+		float: left;
+		position: absolute;
+		left: 0;
+		top: 0;
+		border-radius: 0px 50px 50px 0px;
 	}
 
 	.fixed-action-btn {
@@ -27,28 +38,11 @@
 		margin-left: 2%;
 	}
 
-	.activator {
-		border-radius: 10px;
-	}
-
-	/* All pages */
-
-	.smooth {
-		margin: 0;
-	}
-
-/* Left side of page */
-
-	#left {
-		width: 20%;
-		height: 100%;
-		color: #0D0D23;
-		border: 1px solid #F0F0F0;
-		background: #F0F0F0;
-		float: left;
-		position: absolute;
-		left: 0;
-		top: 0;
+	#logo_name {
+		font-family: 'Megrim', cursive;
+		position: relative;
+		left: 16%;
+		color: #4A4A5D;
 	}
 
 	#logo {
@@ -71,7 +65,7 @@
 
 	.side-bar a {
 		color:#4A4A5D;
-		font-family: 'Sarala', sans-serif;
+		font-family: 'Megrim', cursive;
 	}
 
 	#social {
@@ -98,22 +92,42 @@
 	}
 
 
-	/* Right side of page */
+														/* Right side of page */
+/*******************************************************************************/
 
 	#right {
 		width: 80%;
-		height: 100%;
-		/* background: #4A4A5D; */
+		height: 735px;
 		float: right;
+		overflow:auto;
 	}
 
-	/* contact page */
-	#right-contact {
-		width: 80%;
+	.container {
+		width: 70%;
 		height: 735px;
-		/* background-image: url("../images/contact.png"); */
 		position: relative;
-		float: right;
+		left: -5%;
+	}
+
+	#icon {
+		display: inline;
+		position: absolute;
+		left: 22%;
+		top: 50%;
+		z-index: 10;
+	}
+
+	#angle-icon{
+		opacity: 0.6;
+		transition: 0.3s;
+		cursor: pointer;
+		color: #F0F0F0;
+	}
+
+	#angle-icon:hover {
+		transform: scale(1.5);
+		cursor: pointer;
+		opacity: 1;
 	}
 
 	.large-header {
@@ -136,59 +150,11 @@
 		font-weight: 200;
 	}
 
-	.container {
-		width: 70%;
-		height: 735px;
-		position: relative;
-		left: -5%;
-	}
 
-	.contact {
-		width: 65%;
-		position: relative;
-		left: 12%;
-		top: 18%;
-	}
+											/* Media Quiery @1200 for laptops */
+								/* ----------- Non-Retina Screens ----------- */
+/*******************************************************************************/
 
-	#phone {
-		width: 225px;
-    height: 450px;
-    position: absolute;
-    top: 23%;
-    left: 100.3%;
-    /* background-image: url("../images/phone.png"); */
-    z-index: 10;
-    display: inline;
-		/* border-radius: 2px; */
-	}
-
-	.submit-btn {
-		display: block;
-		width: 100%;
-		border-radius: 5px;
-		padding-top: 1%;
-	}
-
-	label {
-		color: #F0F0F0;
-		font-size: 1em;
-		font-family: 'Sarala', sans-serif;
-
-	}
-	input {
-		color: #F0F0F0;
-		padding: 10% 0;
-	}
-	textarea {
-		color: #F0F0F0;
-		height: 130px;
-	}
-
-
-
-
-/* Media Quiery @1200 for laptops */
-/* ----------- Non-Retina Screens ----------- */
 @media screen
   and (min-device-width: 1200px)
   and (max-device-width: 1600px)
@@ -196,7 +162,7 @@
 
 		/* Left side of page */
 
-		#left {
+		/* #left {
 			width: 20%;
 			height: 735px;
 			color: #0D0D23;
@@ -211,23 +177,16 @@
 			margin: 3% 1% 1% 1%;
 			position: relative;
 			left: 22%;
-		}
+		} */
 		/* Right side of page */
 
-		#right {
+		/* #right {
 			width: 80%;
 			height: 735px;
-			/* background: #4A4A5D; */
+			/* background: #4A4A5D;
 			background-image: url("../images/home_background.png");
 			float: right;
-		}
-
-		/* contact page */
-		#right-contact {
-			width: 80%;
-			height: 735px;
-			background-image: url("../images/contact.png");
-			float: right;
+			overflow: auto;
 		}
 
 		.container {
@@ -235,49 +194,21 @@
 	    height: 735px;
 	    position: relative;
 	    left: -5%;
-		}
-
-		.contact {
-			width: 65%;
-			position: relative;
-			left: 12%;
-			top: 18%;
-		}
-
-		.submit-btn {
-			display: block;
-			width: 100%;
-			border-radius: 5px;
-			padding-top: 1%;
-		}
-		label {
-			color: #F0F0F0;
-			font-size: 1em;
-			font-family: 'Sarala', sans-serif;
-
-		}
-		input {
-			color: #F0F0F0;
-			padding: 10% 0;
-		}
-		textarea {
-			color: #F0F0F0;
-			height: 130px;
-		}
+		} */
 
 }
 
 /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
 
 /* Portrait and Landscape */
-@media only screen
+/* @media only screen
   and (min-device-width: 768px)
   and (max-device-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (-webkit-min-device-pixel-ratio: 2) { */
 
 		/* Left side of page */
 
-		#left {
+		/* #left {
 			width: 20%;
 			height: 100%;
 			color: #0D0D23;
@@ -292,10 +223,10 @@
 			margin: 3% 1% 1% 1%;
 			position: relative;
 			left: 22%;
-		}
+		} */
 
 		/* Right side of page */
-
+/*
 		#right {
 			width: 80%;
 			height: 100%;
@@ -306,19 +237,19 @@
 		.demo-1 .main-title {
 			font-size: 3em;
 		}
-}
+} */
 
 /* ----------- iPhone 6+, 7+ and 8+ and mobile phones with screen less than
  768px ----------- */
 
 /* Portrait and Landscape */
-@media only screen
+/* @media only screen
   and (min-device-width: 414px)
   and (max-device-width: 768px)
-  and (-webkit-min-device-pixel-ratio: 3) {
+  and (-webkit-min-device-pixel-ratio: 3) { */
 
 		/* Left side of page */
-
+/*
 		#left {
 			width: 20%;
 			height: 100%;
@@ -334,15 +265,15 @@
 			margin: 3% 1% 1% 1%;
 			position: relative;
 			left: 22%;
-		}
+		} */
 
 		/* Right side of page */
 
-		#right {
+		/* #right {
 			width: 80%;
 			height: 100%;
 			background: #4A4A5D;
 			float: right;
 		}
 
-}
+} */
