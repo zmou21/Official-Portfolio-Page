@@ -22,9 +22,9 @@ h1 {
 		background: #F0F0F0;
 		float: left;
 		position: absolute;
-		left: 0;
+		left: 1%;
 		top: 2%;
-		border-radius: 0px 50px 50px 0px;
+		border-radius: 50px;
 	}
 
 	.fixed-action-btn {
@@ -81,6 +81,10 @@ h1 {
 		margin: 1%;
 		font-size: 2.25em;
 		color: #4A4A5D;
+	}
+
+	.fab:hover {
+		transform: scale(1.5);
 	}
 
 	footer {
@@ -149,6 +153,16 @@ h1 {
 	.main-title .thin {
 		font-weight: 200;
 	}
+
+	/* #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+		z-index: 20;
+	} */
+
 
 
 											/* Media Quiery @1200 for laptops */
