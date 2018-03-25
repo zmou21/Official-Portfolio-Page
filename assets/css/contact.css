@@ -3,7 +3,7 @@
 #right-contact {
   width: 80%;
   height: 735px;
-  background-image: url("../images/contact.png");
+  background-image: url("../media/contact.png");
   position: relative;
   float: right;
 }
@@ -21,7 +21,7 @@
   position: absolute;
   top: 23%;
   left: 100.3%;
-  /* background-image: url("../images/phone.png");  */
+  /* background-image: url("../media/phone.png");  */
   z-index: 10;
   display: inline;
   /* border-radius: 2px; */
