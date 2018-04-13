@@ -1,16 +1,17 @@
 //api Routes
-
 const mongoose = require("mongoose");
 const db = require("./../models");
 const router = require("express").Router();
 
+//use process.env here in next update
 const api_key = require("../config.js").mailgun;
-
+//sandbox domain from mailgun
 const domain = 'sandboxa1b3865cf2934bd7b0d3ecd52df4f6f9.mailgun.org';
+//require mailgun npm
 const Mailgun = require('mailgun-js');
 
-// Routes
 
+// Routes
 module.exports = function(app) {
   // POST route for saving contact
   app.post("/submit", function(req, res) {
@@ -30,7 +31,7 @@ module.exports = function(app) {
         // res.send("/contact.html");
       })
       .then(mailgun.messages().send(data, function(error, body){
-        console.log("hello: ", data);
+        //console.log("hello: ", data);
         if(error) {
           res.json({ error: error})
           console.log(error);
