@@ -1,16 +1,16 @@
-  var express = require("express");
-  var bodyParser = require("body-parser");
-  var logger = require("morgan");
-  var mongoose = require("mongoose");
+  const express = require("express");
+  const bodyParser = require("body-parser");
+  const logger = require("morgan");
+  const mongoose = require("mongoose");
   require ("./routes/api-routes");
 
   // Require all models
-  var db = require("./models");
+  const db = require("./models");
 
-  var PORT = process.env.PORT || 3000;
+  const PORT = process.env.PORT || 3000;
 
   // Initialize Express
-  var app = express();
+  const app = express();
 
   // Configure middleware
 
@@ -23,15 +23,17 @@
 
   app.use(bodyParser.json());
 
+  const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/contactdb";
+
   // By default mongoose uses callbacks for async queries, we're setting it to use promises (.then syntax) instead
   // Connect to the Mongo DB
   mongoose.Promise = Promise;
-  mongoose.connect("mongodb://localhost/contactdb", {
+  mongoose.connect(MONGODB_URI, {
     useMongoClient: true
   });
 
   require("./routes/api-routes.js")(app);
-  // var routes = require("./routes/api-routes.js");
+  // const routes = require("./routes/api-routes.js");
   //
   // app.use(routes);
 
