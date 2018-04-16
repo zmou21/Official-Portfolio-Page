@@ -40,5 +40,5 @@
 
   // Start the server
   app.listen(port, function() {
-    console.log("App running on port " + PORT + "!");
+    console.log("App running on port " + port + "!");
   });

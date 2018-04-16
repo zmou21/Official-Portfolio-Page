@@ -2,9 +2,10 @@
 const mongoose = require("mongoose");
 const db = require("./../models");
 const router = require("express").Router();
+require("dotenv").config();
 
 //use process.env here in next update
-const api_key = require("../config.js").mailgun;
+const api_key = process.env.API_KEY;
 //sandbox domain from mailgun
 const domain = 'sandboxa1b3865cf2934bd7b0d3ecd52df4f6f9.mailgun.org';
 //require mailgun npm
