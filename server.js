@@ -7,7 +7,7 @@
   // Require all models
   const db = require("./models");
 
-  const PORT = process.env.PORT || 8080;
+  const port = process.env.PORT || 8080;
 
   // Initialize Express
   const app = express();
@@ -39,6 +39,6 @@
   // app.use(routes);
 
   // Start the server
-  app.listen(PORT, function() {
+  app.listen(port, function() {
     console.log("App running on port " + PORT + "!");
   });
