@@ -2,7 +2,7 @@
   const bodyParser = require("body-parser");
   const logger = require("morgan");
   const mongoose = require("mongoose");
-  require ("./routes/api-routes");
+  // require ("./routes/api-routes");
 
   // Require all models
   const db = require("./models");
