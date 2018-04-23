@@ -4,7 +4,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sarala" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
@@ -40,6 +40,18 @@
         </footer>
       </div>
 
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+          <i class="fas fa-bars"></i>
+        </a>
+        <ul>
+          <li><a href="home.html" class="btn-floating red"><i class="fas fa-home"></i></a></li>
+          <li><a href="portfolio_page.html" class="btn-floating yellow darken-1"><i class="far fa-folder"></i></a></li>
+          <li><a href="contact.html" class="btn-floating green"><i class="fas fa-phone"></i></a></li>
+        </ul>
+      </div>
+
+
       <div id="right">
         <div id="icon">
           <i id="angle-icon" class="fas fa-angle-double-left"  onclick="showHideNav()"></i>
@@ -47,6 +59,18 @@
         <video autoplay muted loop id="myVideo">
           <source src="assets/images/portfolio_resize.mp4" type="video/mp4">
         </video>
+        <!-- html for tablet and mobile -->
+          <div class="mobile-footer">
+            <div id="social-mobile">
+              <a href="https://www.linkedin.com/in/zakaria-moumen-48034b118/" target="_blank"><i class="fab fa-linkedin-in faw-mobile"></i></a>
+              <a href="https://github.com/zmou21" target="_blank"><i class="fab fa-github faw-mobile"></i></a>
+              <a href="https://stackoverflow.com/users/9185906/zack" target="_blank"><i class="fab fa-stack-overflow faw-mobile"></i></a>
+              <a href="#"><i class="fab fa-facebook-f faw-mobile"></i></a>
+            </div>
+          </div>
+          <div class="footer">
+            <footer>&copy 2018 MOUMEN</footer>
+          </div>
       </div>
 
     <!--Import jQuery before materialize.js-->
@@ -55,6 +79,10 @@
     <!-- <script type="text/javascript" src="assets/javascript/js/tweenlite.min.js"></script>
     <script type="text/javascript" src="assets/javascript/js/easypack.min.js"></script> -->
     <script type="text/javascript" src="assets/javascript/index.js"></script>
+    <script type="text/javascript">
+      var elem = document.querySelector('.fixed-action-btn');
+      var instance = M.FloatingActionButton.init(elem, {direction:"right", toolbarEnabled: false, hoverEnabled: false});
+    </script>
 
   </body>
 </html>
