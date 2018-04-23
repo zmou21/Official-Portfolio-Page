@@ -223,6 +223,7 @@ function showHideNav() {
     }
 }
 
+
 // consolidate with above function
 // function showHideNavOther() {
 //   var y = document.getElementById("right");
