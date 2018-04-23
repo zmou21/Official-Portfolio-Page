@@ -333,7 +333,7 @@ h1 {
 @media only screen
   and (min-device-width: 300px)
   and (max-device-width: 668px)
-  and (-webkit-min-device-pixel-ratio: 3) {
+  and (-webkit-min-device-pixel-ratio: 2) {
 
 		body {
 			background-image: url("../images/nature.png");
