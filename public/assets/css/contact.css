@@ -61,3 +61,33 @@ textarea {
 
 
 }
+
+
+/* Portrait and Landscape */
+@media all
+  and (min-device-width: 300px)
+  and (max-device-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+    #right {
+      width: 100%;
+      height: 100%;
+      background: #4A4A5D;
+      float: right;
+    }
+    .container {
+      width: 100%;
+      height: 500px;
+      position: relative;
+      left: -5%;
+    }
+    .contact {
+      width: 85%;
+      position: relative;
+      left: 12%;
+      top: 18%;
+    }
+
+
+
+}
