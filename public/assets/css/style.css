@@ -92,6 +92,7 @@ h1 {
 		position: absolute;
 		bottom: 0;
 		left: 24%;
+		text-align: center;
 		color: #0D0D23;
 		font-family: 'Sarala', sans-serif;
 	}
@@ -164,6 +165,12 @@ h1 {
 	}
 
 	.fixed-action-btn {
+		display: none;
+	}
+	.mobile-footer{
+		display: none;
+	}
+	.footer {
 		display: none;
 	}
 
@@ -276,7 +283,7 @@ h1 {
  768px ----------- */
 
 /* Portrait and Landscape */
-@media all
+@media only screen
   and (min-device-width: 300px)
   and (max-device-width: 768px)
   and (-webkit-min-device-pixel-ratio: 3) {
@@ -294,21 +301,39 @@ h1 {
 			position: relative;
 			top: 0;
 			float: right;
+			padding: 1%;
+			width: 100%;
 		}
 		#social-mobile {
-			position: absolute;
+			position: relative;
 			bottom: 0;
-			right: 0;
+			left: 0;
+			width: 100%;
+			text-align: center;
 		}
-		.fa-mobile {
+		.faw-mobile {
 			padding: 2% 4%;
 			margin: 1%;
-			font-size: 2.25em;
+			font-size: 1.5em;
 			color: white;
 		}
 		.mobile-footer{
 			display: block;
 		}
+		.footer {
+			position: relative;
+			display: block;
+			padding: 1%;
+		}
+		footer {
+			position: relative;
+			bottom: 0;
+			left: 0;
+			text-align: center;
+			color: #0D0D23;
+			font-family: 'Sarala', sans-serif;
+		}
+
 /*
 		#logo {
 			width: 50%;
