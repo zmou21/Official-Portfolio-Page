@@ -224,6 +224,29 @@ function showHideNav() {
 }
 
 
+var i = 0;
+var txt1 = 'Hello, welcome to my portfolio'; /* The text */
+var txt2 = 'My name is Zack!'; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+document.getElementById('show-text').onload = function() {typeWriter()};
+
+function typeWriter() {
+  console.log("accessing typewriter");
+
+  if (i < txt1.length) {
+    document.getElementById("line1").innerHTML += txt1.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+  // else if (i < txt2.length) {
+  //   document.getElementById("line2").innerHTML += txt2.charAt(i);
+  //   i++;
+  //   setTimeout(typeWriter, speed);
+  // }
+}
+
+
 // consolidate with above function
 // function showHideNavOther() {
 //   var y = document.getElementById("right");
