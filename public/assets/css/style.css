@@ -163,6 +163,10 @@ h1 {
     min-height: 100%;
 	}
 
+	.fixed-action-btn {
+		display: none;
+	}
+
 
 
 											/* Media Quiery @1200 for laptops */
@@ -220,6 +224,21 @@ h1 {
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+
+			#left {
+				display: none;
+			}
+			#icon {
+				display: none;
+			}
+			.fixed-action-btn {
+				display: block;
+				position: relative;
+				top: 0;
+				float: right;
+				z-index: 10;
+			}
+
 		/* Left side of page */
 
 		/* #left {
@@ -257,37 +276,45 @@ h1 {
  768px ----------- */
 
 /* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 414px)
+@media all
+  and (min-device-width: 300px)
   and (max-device-width: 768px)
   and (-webkit-min-device-pixel-ratio: 3) {
 
 		/* Left side of page */
-/*
-		#left {
-			width: 20%;
-			height: 100%;
-			color: #0D0D23;
-			border: 1px solid #F0F0F0;
-			background: #F0F0F0;
-			float: left;
-			position: relative;
-		}
 
+		#left {
+			display: none;
+		}
+		#icon {
+			display: none;
+		}
+		.fixed-action-btn {
+			display: block;
+			position: relative;
+			top: 0;
+			float: right;
+		}
+		#social-mobile {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+		.fa-mobile {
+			padding: 2% 4%;
+			margin: 1%;
+			font-size: 2.25em;
+			color: white;
+		}
+		.mobile-footer{
+			display: block;
+		}
+/*
 		#logo {
 			width: 50%;
 			margin: 3% 1% 1% 1%;
 			position: relative;
 			left: 22%;
-		} */
-
-		/* Right side of page */
-
-		/* #right {
-			width: 80%;
-			height: 100%;
-			background: #4A4A5D;
-			float: right;
-		} */
+		}
 
 }
