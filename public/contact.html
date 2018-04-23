@@ -15,15 +15,7 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <style>
-      body{
-        background-image: url("assets/images/main_background.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
 
-    </style>
   </head>
 
   <body>
@@ -51,13 +43,13 @@
       </div>
 
       <div class="fixed-action-btn">
-        <a class="btn-floating btn-large red">
+        <a class="btn-floating btn-large">
           <i class="fas fa-bars"></i>
         </a>
         <ul>
-          <li><a href="home.html" class="btn-floating red"><i class="fas fa-home"></i></a></li>
-          <li><a href="portfolio_page.html" class="btn-floating yellow darken-1"><i class="far fa-folder"></i></a></li>
-          <li><a href="contact.html" class="btn-floating green"><i class="fas fa-phone"></i></a></li>
+          <li><a href="home.html" class="btn-floating btn-one"><i class="fas fa-home"></i></a></li>
+          <li><a href="portfolio_page.html" class="btn-floating btn-two"><i class="far fa-folder"></i></a></li>
+          <li><a href="contact.html" class="btn-floating btn-three"><i class="fas fa-phone"></i></a></li>
         </ul>
       </div>
 
@@ -95,7 +87,7 @@
     <script type="text/javascript" src="assets/javascript/index.js"></script>
     <script type="text/javascript">
       var elem = document.querySelector('.fixed-action-btn');
-      var instance = M.FloatingActionButton.init(elem, {direction:"right", toolbarEnabled: false, hoverEnabled: false});
+      var instance = M.FloatingActionButton.init(elem, {direction:"left", toolbarEnabled: false, hoverEnabled: false});
     </script>
   </body>
 
