@@ -4,13 +4,6 @@ body {
   background-image: url("../images/home_background.png");
 }
 
-/* #right-portfolio {
-  width: 80%;
-  height: 735px;
-  float: right;
-  overflow:auto;
-} */
-
 .demo-1 .main-title {
   text-transform: uppercase;
   font-size: 4.2em;
@@ -101,5 +94,27 @@ body {
 	    position: relative;
 	    left: -5%;
 		} */
+
+}
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 300px)
+  and (max-device-width: 668px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+  body {
+    background-image: url("../images/nature.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #right {
+    width: 100%;
+		max-height: auto;
+		float: right;
+		overflow:auto;
+	}
 
 }
