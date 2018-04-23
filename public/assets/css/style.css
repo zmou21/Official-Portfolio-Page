@@ -331,14 +331,22 @@ h1 {
 
 		body {
 			background-image: url("../images/nature.png");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
 		}
 		/* Left side of page */
-
 		#left {
 			display: none;
 		}
 		#icon {
 			display: none;
+		}
+		#right {
+			width: 100%;
+			max-height: auto;
+			float: right;
+			overflow:auto;
 		}
 		.fixed-action-btn {
 			display: block;
