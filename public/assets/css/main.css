@@ -341,3 +341,45 @@
 			transform: scale(1) rotate(0deg);
 		}
 	}
+
+	/* Portrait and Landscape */
+	@media only screen
+	  and (min-device-width: 300px)
+	  and (max-device-width: 668px)
+	  and (-webkit-min-device-pixel-ratio: 2) {
+
+			body {
+				background: #F0F0F0 url('../images/nature.png') no-repeat center center fixed;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				font-family: 'Sarala', sans-serif;
+			}
+			.sp-circle-link {
+		    position: absolute;
+		    left: 50%;
+		    bottom: 125px;
+		    margin-left: -90px;
+		    text-align: center;
+		    line-height: 140px;
+		    width: 150px;
+		    height: 150px;
+		    background: #fff;
+		    color: #4A4A5D;
+		    font-size: 45px;
+		    -webkit-border-radius: 50%;
+		    -moz-border-radius: 50%;
+		    border-radius: 50%;
+		    -webkit-animation: fadeInRotate 1s linear 8s backwards;
+		    -moz-animation: fadeInRotate 1s linear 8s backwards;
+		    -ms-animation: fadeInRotate 1s linear 8s backwards;
+		    animation: fadeInRotate 1s linear 8s backwards;
+		    -webkit-transform: scale(1) rotate(0deg);
+		    -moz-transform: scale(1) rotate(0deg);
+		    -o-transform: scale(1) rotate(0deg);
+		    -ms-transform: scale(1) rotate(0deg);
+		    transform: scale(1) rotate(0deg);
+		}
+
+	}
