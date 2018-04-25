@@ -24,7 +24,7 @@ h1 {
 		position: absolute;
 		left: 1%;
 		top: 2%;
-		border-radius: 50px;
+		border-radius: 10px;
 		z-index: 20;
 	}
 
@@ -47,26 +47,26 @@ h1 {
 	}
 
 	#logo {
-		width: 50%;
-		margin: 3% 1% 1% 1%;
-		position: relative;
-		left: 22%;
+		width: 155%;
+    margin: 3% 1% 1% 1%;
+    position: relative;
+    left: -38%;
 	}
 
 	#links {
 		position: relative;
-		top: 8%;
+		top: 2%;
 	}
 
 	.side-bar {
-		font-size: 1.25em;
+		font-size: 1.35em;
 		text-align: right;
 		padding: 2% 3%;
 	}
 
 	.side-bar a {
 		color:#4A4A5D;
-		font-family: 'Megrim', cursive;
+		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 	}
 
 	#social {
@@ -94,7 +94,7 @@ h1 {
 		left: 24%;
 		text-align: center;
 		color: #0D0D23;
-		font-family: 'Sarala', sans-serif;
+		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 	}
 
 
